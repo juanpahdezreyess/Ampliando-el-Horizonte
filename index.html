@@ -6,7 +6,7 @@
 
 <title>Expresión Religiosa - Testigos de Jehová</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,25 +18,27 @@ box-sizing:border-box;
 
 body{
 font-family:'Poppins',sans-serif;
-background:linear-gradient(135deg,#0f172a,#1e3a8a);
+background:linear-gradient(135deg,#020617,#1e3a8a);
 color:white;
 overflow-x:hidden;
 }
+
+/* navegación */
 
 nav{
 position:fixed;
 top:0;
 width:100%;
-background:rgba(0,0,0,0.4);
-backdrop-filter:blur(10px);
-padding:15px;
+background:rgba(0,0,0,0.6);
+padding:18px;
 text-align:center;
 z-index:1000;
 }
 
 nav a{
 color:white;
-margin:0 15px;
+margin:0 20px;
+font-size:18px;
 text-decoration:none;
 font-weight:500;
 }
@@ -45,81 +47,95 @@ nav a:hover{
 color:#38bdf8;
 }
 
+/* secciones tipo diapositiva */
+
 section{
 min-height:100vh;
+width:100%;
 display:flex;
 align-items:center;
 justify-content:center;
-padding:80px 20px;
+padding:120px 80px;
 }
+
+/* contenedor */
 
 .container{
-max-width:1100px;
 width:100%;
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(15px);
-border-radius:15px;
-padding:40px;
-box-shadow:0 20px 40px rgba(0,0,0,0.4);
-animation:fadeUp 1s ease;
+max-width:1600px;
 }
 
+/* títulos */
+
 h1{
-font-size:55px;
+font-size:90px;
 margin-bottom:20px;
 }
 
 h2{
-font-size:38px;
-margin-bottom:20px;
+font-size:60px;
+margin-bottom:40px;
 color:#38bdf8;
 }
 
+/* texto */
+
 p{
-font-size:20px;
-line-height:1.6;
-margin-bottom:15px;
+font-size:32px;
+line-height:1.5;
+margin-bottom:25px;
 }
 
 ul{
-font-size:20px;
-line-height:1.7;
-padding-left:25px;
+font-size:32px;
+line-height:1.6;
+padding-left:40px;
 }
 
-img{
-width:100%;
-border-radius:10px;
-margin:20px 0;
-}
+/* grid */
 
 .grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:30px;
+gap:60px;
+align-items:center;
 }
+
+/* tarjetas */
 
 .card{
-background:rgba(255,255,255,0.1);
-padding:25px;
-border-radius:10px;
+background:rgba(255,255,255,0.08);
+padding:50px;
+border-radius:16px;
+backdrop-filter:blur(10px);
 }
 
-@keyframes fadeUp{
-from{
-opacity:0;
-transform:translateY(40px);
+/* imágenes */
+
+img{
+width:100%;
+border-radius:15px;
+box-shadow:0 20px 40px rgba(0,0,0,0.5);
 }
-to{
-opacity:1;
-transform:translateY(0);
+
+/* portada */
+
+.portada{
+text-align:center;
 }
+
+.portada img{
+width:70%;
+margin-top:40px;
 }
+
+/* footer */
 
 footer{
 text-align:center;
 padding:30px;
 background:#020617;
+font-size:20px;
 }
 
 </style>
@@ -128,7 +144,7 @@ background:#020617;
 <body>
 
 <nav>
-<a href="#portada">Inicio</a>
+<a href="#inicio">Inicio</a>
 <a href="#intro">Introducción</a>
 <a href="#creencias">Creencias</a>
 <a href="#practicas">Prácticas</a>
@@ -137,40 +153,45 @@ background:#020617;
 <a href="#conclusion">Conclusión</a>
 </nav>
 
+<!-- PORTADA -->
 
-<section id="portada">
-<div class="container">
+<section id="inicio">
+
+<div class="container portada">
 
 <h1>Ampliando el Horizonte</h1>
 
-<p style="font-size:26px;">
+<p style="font-size:40px;">
 Conocer para Comprenderse
+</p>
+
+<p style="font-size:30px;">
+Expresión religiosa: Testigos de Jehová
 </p>
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Jehovah%27s_Witnesses_Convention.jpg">
 
-<p><b>Expresión religiosa:</b> Testigos de Jehová</p>
-<p><b>Materia:</b> Religión en la era global</p>
-
-<p>
-<b>Integrantes:</b><br>
-Nombre 1<br>
-Nombre 2<br>
-Nombre 3
+<p style="margin-top:30px;font-size:28px;">
+Integrantes: Nombre 1 – Nombre 2 – Nombre 3
 </p>
 
 </div>
+
 </section>
 
 
+<!-- INTRO -->
+
 <section id="intro">
+
 <div class="container">
 
 <h2>Introducción</h2>
 
 <div class="grid">
 
-<div>
+<div class="card">
+
 <p>
 Los Testigos de Jehová son un movimiento religioso cristiano que surgió en el siglo XIX en Estados Unidos.
 </p>
@@ -180,25 +201,32 @@ Fue iniciado por Charles Taze Russell alrededor del año 1870.
 </p>
 
 <p>
-Actualmente se encuentra presente en muchos países del mundo.
+Actualmente está presente en muchos países del mundo y es conocido por su predicación de casa en casa.
 </p>
 
 <p>
-Es conocido principalmente por la predicación de casa en casa y por el uso constante de la Biblia.
+Se considera una religión contemporánea porque tiene menos de 150 años.
 </p>
+
 </div>
 
 <div>
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Charles_Taze_Russell_1911.jpg">
-</div>
 
 </div>
 
 </div>
+
+</div>
+
 </section>
 
 
+<!-- CREENCIAS -->
+
 <section id="creencias">
+
 <div class="container">
 
 <h2>Pilar 1: Creencias</h2>
@@ -206,78 +234,117 @@ Es conocido principalmente por la predicación de casa en casa y por el uso cons
 <div class="grid">
 
 <div class="card">
+
 <ul>
 <li>Jehová es el único Dios verdadero</li>
-<li>La Biblia es la autoridad principal</li>
+<li>La Biblia es su autoridad principal</li>
 <li>Jesucristo es el hijo de Dios</li>
 </ul>
+
 </div>
 
 <div class="card">
+
 <ul>
 <li>Creen en el Reino de Dios</li>
-<li>Esperan un futuro paraíso en la Tierra</li>
+<li>Esperan un paraíso futuro en la Tierra</li>
 <li>Las enseñanzas bíblicas guían su vida</li>
 </ul>
-</div>
 
 </div>
 
 </div>
+
+</div>
+
 </section>
 
+
+<!-- PRACTICAS -->
 
 <section id="practicas">
+
 <div class="container">
 
-<h2>Pilar 2: Prácticas y ritos</h2>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Kingdom_Hall_Jehovahs_Witnesses.jpg">
-
-<ul>
-<li>Estudio frecuente de la Biblia</li>
-<li>Reuniones semanales en el Salón del Reino</li>
-<li>Predicación pública</li>
-<li>Predicación de casa en casa</li>
-<li>Conmemoración anual de la muerte de Jesús</li>
-</ul>
-
-</div>
-</section>
-
-
-<section id="comunidad">
-<div class="container">
-
-<h2>Pilar 3: Comunidad</h2>
-
-<p>
-Los Testigos de Jehová forman una comunidad internacional muy organizada.
-</p>
-
-<p>
-Sus miembros se apoyan entre sí y siguen normas de conducta basadas en la Biblia.
-</p>
-
-<p>
-También realizan congresos y asambleas donde se reúnen miles de creyentes.
-</p>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Jehovah_Witnesses_convention.jpg">
-
-</div>
-</section>
-
-
-<section id="sentido">
-<div class="container">
-
-<h2>Pilar 4: Sentido y propósito</h2>
+<h2>Pilar 2: Prácticas</h2>
 
 <div class="grid">
 
 <div>
-<p>Para los Testigos de Jehová el propósito de la vida es:</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Kingdom_Hall_Jehovahs_Witnesses.jpg">
+
+</div>
+
+<div class="card">
+
+<ul>
+<li>Estudio constante de la Biblia</li>
+<li>Reuniones en el Salón del Reino</li>
+<li>Predicación pública</li>
+<li>Predicación casa por casa</li>
+<li>Conmemoración de la muerte de Jesús</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- COMUNIDAD -->
+
+<section id="comunidad">
+
+<div class="container">
+
+<h2>Pilar 3: Comunidad</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<p>
+Los Testigos de Jehová forman una comunidad internacional organizada.
+</p>
+
+<p>
+Sus miembros se apoyan entre sí y siguen normas basadas en la Biblia.
+</p>
+
+<p>
+También realizan grandes congresos donde se reúnen miles de creyentes.
+</p>
+
+</div>
+
+<div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Jehovah_Witnesses_convention.jpg">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SENTIDO -->
+
+<section id="sentido">
+
+<div class="container">
+
+<h2>Pilar 4: Sentido y Propósito</h2>
+
+<div class="grid">
+
+<div class="card">
 
 <ul>
 <li>Conocer a Dios</li>
@@ -285,43 +352,54 @@ También realizan congresos y asambleas donde se reúnen miles de creyentes.
 <li>Predicar su mensaje</li>
 <li>Esperar el Reino de Dios</li>
 </ul>
+
 </div>
 
 <div>
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Jehovah%27s_Witnesses_preaching.jpg">
-</div>
 
 </div>
 
 </div>
+
+</div>
+
 </section>
 
 
+<!-- CONCLUSION -->
+
 <section id="conclusion">
+
 <div class="container">
 
 <h2>Conclusión</h2>
 
+<div class="card">
+
 <p>
-Analizar a los Testigos de Jehová permite entender cómo las religiones modernas siguen influyendo en la vida de millones de personas.
+Analizar a los Testigos de Jehová permite entender cómo las religiones modernas siguen influyendo en millones de personas.
 </p>
 
 <p>
-Aunque tienen creencias distintas a otras religiones, comparten elementos fundamentales como la fe, la comunidad y la búsqueda de sentido.
+Aunque tienen creencias diferentes a otras religiones, comparten elementos fundamentales como la fe, la comunidad y la búsqueda de sentido.
 </p>
 
 <p>
-Estudiar estas expresiones religiosas nos ayuda a desarrollar respeto y comprensión hacia la diversidad religiosa.
+Estudiar estas expresiones religiosas ayuda a fomentar respeto y comprensión hacia la diversidad religiosa.
 </p>
 
 </div>
+
+</div>
+
 </section>
 
 
 <footer>
 Presentación académica
 </footer>
-
 
 </body>
 </html>
