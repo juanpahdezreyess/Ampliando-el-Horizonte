@@ -3,66 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ampliando el Horizonte: Conocer para Comprenderse</title>
+
+<title>Expresión Religiosa - Testigos de Jehová</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#0f172a;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
 color:white;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#38bdf8;
 }
 
 section{
 min-height:100vh;
-padding:60px;
 display:flex;
-flex-direction:column;
+align-items:center;
 justify-content:center;
-max-width:1200px;
-margin:auto;
+padding:80px 20px;
+}
+
+.container{
+max-width:1100px;
+width:100%;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border-radius:15px;
+padding:40px;
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+animation:fadeUp 1s ease;
 }
 
 h1{
-font-size:60px;
+font-size:55px;
 margin-bottom:20px;
 }
 
 h2{
-font-size:40px;
+font-size:38px;
 margin-bottom:20px;
 color:#38bdf8;
 }
 
 p{
-font-size:22px;
+font-size:20px;
 line-height:1.6;
+margin-bottom:15px;
 }
 
 ul{
-font-size:22px;
-line-height:1.8;
+font-size:20px;
+line-height:1.7;
+padding-left:25px;
+}
+
+img{
+width:100%;
+border-radius:10px;
+margin:20px 0;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
 }
 
 .card{
-background:#1e293b;
-padding:40px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.3);
+background:rgba(255,255,255,0.1);
+padding:25px;
+border-radius:10px;
 }
 
-.portada{
-text-align:center;
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
 }
-
-.portada h1{
-font-size:70px;
+to{
+opacity:1;
+transform:translateY(0);
 }
-
-.portada h3{
-font-size:30px;
-font-weight:normal;
 }
 
 footer{
@@ -76,80 +127,128 @@ background:#020617;
 
 <body>
 
-<section class="portada">
-<div class="card">
+<nav>
+<a href="#portada">Inicio</a>
+<a href="#intro">Introducción</a>
+<a href="#creencias">Creencias</a>
+<a href="#practicas">Prácticas</a>
+<a href="#comunidad">Comunidad</a>
+<a href="#sentido">Propósito</a>
+<a href="#conclusion">Conclusión</a>
+</nav>
+
+
+<section id="portada">
+<div class="container">
+
 <h1>Ampliando el Horizonte</h1>
-<h3>Conocer para Comprenderse</h3>
+
+<p style="font-size:26px;">
+Conocer para Comprenderse
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Jehovah%27s_Witnesses_Convention.jpg">
 
 <p><b>Expresión religiosa:</b> Testigos de Jehová</p>
 <p><b>Materia:</b> Religión en la era global</p>
 
-<p><b>Integrantes:</b><br>
+<p>
+<b>Integrantes:</b><br>
 Nombre 1<br>
 Nombre 2<br>
 Nombre 3
 </p>
+
 </div>
 </section>
 
-<section>
-<div class="card">
+
+<section id="intro">
+<div class="container">
+
 <h2>Introducción</h2>
 
+<div class="grid">
+
+<div>
 <p>
 Los Testigos de Jehová son un movimiento religioso cristiano que surgió en el siglo XIX en Estados Unidos.
+</p>
+
+<p>
 Fue iniciado por Charles Taze Russell alrededor del año 1870.
 </p>
 
 <p>
-Actualmente es una religión presente en muchos países del mundo y es conocida por su predicación de casa en casa
-y por el uso constante de la Biblia como base de sus creencias.
+Actualmente se encuentra presente en muchos países del mundo.
 </p>
 
 <p>
-Esta expresión religiosa es considerada contemporánea porque tiene menos de 150 años de existencia.
+Es conocido principalmente por la predicación de casa en casa y por el uso constante de la Biblia.
 </p>
+</div>
+
+<div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Charles_Taze_Russell_1911.jpg">
+</div>
+
+</div>
 
 </div>
 </section>
 
-<section>
-<div class="card">
+
+<section id="creencias">
+<div class="container">
+
 <h2>Pilar 1: Creencias</h2>
 
-<p>Uno de los pilares fundamentales de la religión son las creencias.</p>
+<div class="grid">
 
+<div class="card">
 <ul>
-<li>Creen que Jehová es el único Dios verdadero.</li>
-<li>La Biblia es la máxima autoridad para su vida.</li>
-<li>Jesucristo es el hijo de Dios.</li>
-<li>Creen en el Reino de Dios que gobernará la Tierra.</li>
-<li>Esperan un futuro paraíso para la humanidad.</li>
+<li>Jehová es el único Dios verdadero</li>
+<li>La Biblia es la autoridad principal</li>
+<li>Jesucristo es el hijo de Dios</li>
 </ul>
+</div>
+
+<div class="card">
+<ul>
+<li>Creen en el Reino de Dios</li>
+<li>Esperan un futuro paraíso en la Tierra</li>
+<li>Las enseñanzas bíblicas guían su vida</li>
+</ul>
+</div>
+
+</div>
 
 </div>
 </section>
 
-<section>
-<div class="card">
+
+<section id="practicas">
+<div class="container">
+
 <h2>Pilar 2: Prácticas y ritos</h2>
 
-<ul>
-<li>Estudio frecuente de la Biblia.</li>
-<li>Reuniones semanales en el Salón del Reino.</li>
-<li>Predicación pública y de casa en casa.</li>
-<li>Conmemoración anual de la muerte de Jesús.</li>
-</ul>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Kingdom_Hall_Jehovahs_Witnesses.jpg">
 
-<p>
-Estas prácticas buscan fortalecer su fe y compartir su mensaje con otras personas.
-</p>
+<ul>
+<li>Estudio frecuente de la Biblia</li>
+<li>Reuniones semanales en el Salón del Reino</li>
+<li>Predicación pública</li>
+<li>Predicación de casa en casa</li>
+<li>Conmemoración anual de la muerte de Jesús</li>
+</ul>
 
 </div>
 </section>
 
-<section>
-<div class="card">
+
+<section id="comunidad">
+<div class="container">
+
 <h2>Pilar 3: Comunidad</h2>
 
 <p>
@@ -161,62 +260,68 @@ Sus miembros se apoyan entre sí y siguen normas de conducta basadas en la Bibli
 </p>
 
 <p>
-También realizan reuniones, congresos y asambleas donde conviven con otros miembros de su religión.
+También realizan congresos y asambleas donde se reúnen miles de creyentes.
 </p>
 
-<p>
-Esto fortalece el sentido de pertenencia dentro del grupo religioso.
-</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Jehovah_Witnesses_convention.jpg">
 
 </div>
 </section>
 
-<section>
-<div class="card">
+
+<section id="sentido">
+<div class="container">
+
 <h2>Pilar 4: Sentido y propósito</h2>
 
-<p>
-La religión también busca dar sentido a la vida y explicar el propósito de la existencia.
-</p>
+<div class="grid">
+
+<div>
+<p>Para los Testigos de Jehová el propósito de la vida es:</p>
 
 <ul>
-<li>Conocer a Dios.</li>
-<li>Vivir según las enseñanzas bíblicas.</li>
-<li>Esperar la llegada del Reino de Dios.</li>
+<li>Conocer a Dios</li>
+<li>Vivir según la Biblia</li>
+<li>Predicar su mensaje</li>
+<li>Esperar el Reino de Dios</li>
 </ul>
+</div>
 
-<p>
-Estas ideas ayudan a los creyentes a enfrentar dificultades y mantener esperanza en el futuro.
-</p>
+<div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Jehovah%27s_Witnesses_preaching.jpg">
+</div>
+
+</div>
 
 </div>
 </section>
 
-<section>
-<div class="card">
+
+<section id="conclusion">
+<div class="container">
+
 <h2>Conclusión</h2>
 
 <p>
-Analizar a los Testigos de Jehová permite comprender cómo las religiones modernas siguen teniendo influencia
-en la vida de muchas personas.
+Analizar a los Testigos de Jehová permite entender cómo las religiones modernas siguen influyendo en la vida de millones de personas.
 </p>
 
 <p>
-Aunque tienen creencias diferentes a otras religiones, comparten elementos fundamentales como la fe,
-la comunidad y la búsqueda de sentido.
+Aunque tienen creencias distintas a otras religiones, comparten elementos fundamentales como la fe, la comunidad y la búsqueda de sentido.
 </p>
 
 <p>
-Estudiar estas expresiones religiosas nos ayuda a desarrollar respeto, tolerancia y comprensión
-de la diversidad religiosa en el mundo actual.
+Estudiar estas expresiones religiosas nos ayuda a desarrollar respeto y comprensión hacia la diversidad religiosa.
 </p>
 
 </div>
 </section>
+
 
 <footer>
 Presentación académica
 </footer>
+
 
 </body>
 </html>
