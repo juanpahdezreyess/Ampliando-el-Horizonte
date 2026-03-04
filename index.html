@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ampliando el Horizonte</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0f172a;
+color:white;
+overflow:hidden;
+}
+
+.slide{
+width:100vw;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:60px;
+box-sizing:border-box;
+position:absolute;
+top:0;
+left:0;
+opacity:0;
+transition:opacity .6s;
+}
+
+.slide.active{
+opacity:1;
+}
+
+h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+p{
+font-size:24px;
+max-width:900px;
+line-height:1.6;
+}
+
+ul{
+font-size:24px;
+text-align:left;
+max-width:800px;
+}
+
+img{
+margin-top:30px;
+max-width:500px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.nav{
+position:fixed;
+bottom:30px;
+right:40px;
+}
+
+button{
+padding:14px 24px;
+font-size:18px;
+border:none;
+border-radius:8px;
+background:#38bdf8;
+color:white;
+cursor:pointer;
+margin-left:10px;
+}
+
+button:hover{
+background:#0ea5e9;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SLIDE 1 -->
+
+<div class="slide active">
+<h1>Ampliando el Horizonte</h1>
+<h2>Conocer para Comprenderse</h2>
+
+<p>Análisis de una expresión religiosa contemporánea</p>
+
+<p><b>Cienciología</b></p>
+
+<p>
+Equipo:<br>
+Juan Pablo Hernández Reyes<br>
+_________________<br>
+_________________
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Scientology_cross.jpg">
+
+</div>
+
+
+<!-- SLIDE 2 -->
+
+<div class="slide">
+
+<h2>Introducción</h2>
+
+<p>
+La Cienciología es un movimiento religioso fundado en 1954 por L. Ron Hubbard.
+Se basa en la idea de que los seres humanos son seres espirituales llamados
+thetanes que han vivido múltiples vidas.
+</p>
+
+<p>
+Esta religión propone un camino de desarrollo espiritual mediante prácticas
+de autoconocimiento y crecimiento personal.
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Scientology_building_LA.jpg">
+
+</div>
+
+
+<!-- SLIDE 3 -->
+
+<div class="slide">
+
+<h2>Pilar 1: Creencias</h2>
+
+<ul>
+<li>El ser humano es un ser espiritual llamado thetán.</li>
+<li>La mente guarda recuerdos de experiencias pasadas.</li>
+<li>El objetivo espiritual es alcanzar el estado llamado "Clear".</li>
+<li>El crecimiento espiritual permite mayor libertad personal.</li>
+</ul>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Scientology_symbol.svg">
+
+</div>
+
+
+<!-- SLIDE 4 -->
+
+<div class="slide">
+
+<h2>Pilar 2: Prácticas</h2>
+
+<p>
+Una práctica central es la auditoría.
+En estas sesiones una persona reflexiona sobre experiencias
+de su vida para liberar traumas emocionales.
+</p>
+
+<p>
+También se realizan cursos espirituales y entrenamientos
+para mejorar el conocimiento personal.
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/E-meter.jpg">
+
+</div>
+
+
+<!-- SLIDE 5 -->
+
+<div class="slide">
+
+<h2>Pilar 3: Comunidad</h2>
+
+<p>
+Los seguidores de la Cienciología se reúnen en iglesias y centros
+alrededor del mundo.
+</p>
+
+<ul>
+<li>Actividades religiosas</li>
+<li>Cursos espirituales</li>
+<li>Convivencia entre miembros</li>
+</ul>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Scientology_Los_Angeles.jpg">
+
+</div>
+
+
+<!-- SLIDE 6 -->
+
+<div class="slide">
+
+<h2>Pilar 4: Sentido de vida</h2>
+
+<p>
+Esta religión propone que cada persona puede mejorar su vida espiritual
+y alcanzar mayor conocimiento de sí misma.
+</p>
+
+<p>
+El crecimiento espiritual permite superar problemas personales
+y vivir de manera más consciente.
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Church_of_Scientology_Hollywood.jpg">
+
+</div>
+
+
+<!-- SLIDE 7 -->
+
+<div class="slide">
+
+<h2>Conclusión</h2>
+
+<p>
+Analizar religiones modernas como la Cienciología permite comprender
+mejor cómo las personas buscan respuestas espirituales en la actualidad.
+</p>
+
+<p>
+Estudiar diferentes creencias ayuda a fomentar el respeto,
+la tolerancia y una visión más amplia del fenómeno religioso.
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Scientology_cross_gold.jpg">
+
+</div>
+
+
+
+<div class="nav">
+<button onclick="prev()">←</button>
+<button onclick="next()">→</button>
+</div>
+
+
+<script>
+
+let slide=0
+const slides=document.querySelectorAll(".slide")
+
+function show(n){
+
+slides.forEach(s=>s.classList.remove("active"))
+slides[n].classList.add("active")
+
+}
+
+function next(){
+
+slide++
+
+if(slide>=slides.length) slide=slides.length-1
+
+show(slide)
+
+}
+
+function prev(){
+
+slide--
+
+if(slide<0) slide=0
+
+show(slide)
+
+}
+
+document.addEventListener("keydown",e=>{
+if(e.key==="ArrowRight") next()
+if(e.key==="ArrowLeft") prev()
+})
+
+</script>
+
+</body>
+</html>
