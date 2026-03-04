@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ampliando el Horizonte</title>
+<title>Ampliando el Horizonte - Testigos de Jehová</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
@@ -22,6 +22,7 @@ body{
 font-family:'Poppins',sans-serif;
 background:linear-gradient(135deg,#020617,#1e3a8a);
 color:white;
+line-height:1.6;
 }
 
 /* navegación */
@@ -34,6 +35,7 @@ background:rgba(0,0,0,0.6);
 padding:18px;
 text-align:center;
 z-index:1000;
+backdrop-filter:blur(5px);
 }
 
 nav a{
@@ -42,6 +44,7 @@ margin:0 20px;
 font-size:20px;
 text-decoration:none;
 font-weight:500;
+transition:color 0.3s;
 }
 
 nav a:hover{
@@ -69,6 +72,7 @@ max-width:1800px;
 h1{
 font-size:90px;
 margin-bottom:20px;
+line-height:1.2;
 }
 
 h2{
@@ -106,6 +110,8 @@ align-items:center;
 background:rgba(255,255,255,0.08);
 padding:50px;
 border-radius:16px;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.1);
 }
 
 /* imágenes */
@@ -116,6 +122,11 @@ max-height:650px;
 object-fit:cover;
 border-radius:15px;
 box-shadow:0 20px 40px rgba(0,0,0,0.5);
+transition:transform 0.3s;
+}
+
+img:hover{
+transform:scale(1.02);
 }
 
 /* portada */
@@ -134,6 +145,25 @@ text-align:center;
 padding:30px;
 background:#020617;
 font-size:20px;
+}
+
+/* responsividad básica */
+
+@media (max-width: 1200px){
+h1{font-size:70px;}
+h2{font-size:50px;}
+p, ul{font-size:28px;}
+section{padding:100px 40px;}
+}
+
+@media (max-width: 768px){
+.grid{grid-template-columns:1fr;}
+h1{font-size:50px;}
+h2{font-size:40px;}
+p, ul{font-size:24px;}
+nav a{margin:0 10px; font-size:16px;}
+section{padding:80px 20px;}
+.portada img{width:100%;}
 }
 
 </style>
@@ -162,18 +192,18 @@ font-size:20px;
 
 <h1>Ampliando el Horizonte</h1>
 
-<p style="font-size:40px;">
+<p style="font-size:40px; font-weight:300;">
 Conocer para Comprenderse
 </p>
 
-<p style="font-size:32px;">
+<p style="font-size:32px; margin-bottom:40px;">
 Expresión religiosa: Testigos de Jehová
 </p>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Jehovah%27s_Witnesses_Convention.jpg">
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Biblioteca con libros - Representación del estudio bíblico">
 
-<p style="margin-top:30px;font-size:30px;">
-Integrantes: Nombre 1 – Nombre 2 – Nombre 3
+<p style="margin-top:50px; font-size:30px; color:#94a3b8;">
+Integrantes: Equipo 3 – Sociología de la Religión
 </p>
 
 </div>
@@ -202,18 +232,18 @@ Fue iniciado por Charles Taze Russell alrededor del año 1870.
 </p>
 
 <p>
-Actualmente está presente en muchos países del mundo.
+Actualmente está presente en 240 países y territorios, con más de 8 millones de publicadores.
 </p>
 
 <p>
-Es conocido principalmente por la predicación de casa en casa y el estudio de la Biblia.
+Es conocido principalmente por la predicación de casa en casa y el estudio sistemático de la Biblia.
 </p>
 
 </div>
 
 <div>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Charles_Taze_Russell_1911.jpg">
+<img src="https://images.pexels.com/photos/3762802/pexels-photo-3762802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Persona leyendo un libro - Estudio bíblico">
 
 </div>
 
@@ -230,7 +260,7 @@ Es conocido principalmente por la predicación de casa en casa y el estudio de l
 
 <div class="container">
 
-<h2>Pilar 1: Creencias</h2>
+<h2>Pilar 1: Creencias Fundamentales</h2>
 
 <div class="grid">
 
@@ -238,11 +268,11 @@ Es conocido principalmente por la predicación de casa en casa y el estudio de l
 
 <ul>
 
-<li>Jehová es el único Dios verdadero</li>
+<li>Jehová es el único Dios verdadero y creador del universo</li>
 
-<li>La Biblia es la autoridad principal</li>
+<li>La Biblia (Traducción del Nuevo Mundo) es la autoridad principal</li>
 
-<li>Jesucristo es el hijo de Dios</li>
+<li>Jesucristo es el hijo de Dios y el primer ser creado</li>
 
 </ul>
 
@@ -252,11 +282,11 @@ Es conocido principalmente por la predicación de casa en casa y el estudio de l
 
 <ul>
 
-<li>Creen en el Reino de Dios</li>
+<li>El Reino de Dios gobernará la Tierra y traerá paz</li>
 
-<li>Esperan un paraíso futuro en la Tierra</li>
+<li>La Tierra se convertirá en un paraíso para siempre</li>
 
-<li>Las enseñanzas bíblicas guían su vida</li>
+<li>La muerte de Jesús fue el sacrificio perfecto por la humanidad</li>
 
 </ul>
 
@@ -275,13 +305,13 @@ Es conocido principalmente por la predicación de casa en casa y el estudio de l
 
 <div class="container">
 
-<h2>Pilar 2: Prácticas</h2>
+<h2>Pilar 2: Prácticas Religiosas</h2>
 
 <div class="grid">
 
 <div>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Jehovah%27s_Witnesses_preaching.jpg">
+<img src="https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Puerta abierta - Simbolismo de predicación casa por casa">
 
 </div>
 
@@ -289,15 +319,15 @@ Es conocido principalmente por la predicación de casa en casa y el estudio de l
 
 <ul>
 
-<li>Estudio constante de la Biblia</li>
+<li>Estudio personal y familiar de la Biblia diariamente</li>
 
-<li>Reuniones en el Salón del Reino</li>
+<li>Reuniones semanales en el Salón del Reino</li>
 
-<li>Predicación pública</li>
+<li>Predicación pública y casa por casa</li>
 
-<li>Predicación casa por casa</li>
+<li>Asambleas anuales y congresos internacionales</li>
 
-<li>Conmemoración de la muerte de Jesús</li>
+<li>Conmemoración anual de la muerte de Jesús</li>
 
 </ul>
 
@@ -316,29 +346,29 @@ Es conocido principalmente por la predicación de casa en casa y el estudio de l
 
 <div class="container">
 
-<h2>Pilar 3: Comunidad</h2>
+<h2>Pilar 3: Comunidad y Organización</h2>
 
 <div class="grid">
 
 <div class="card">
 
 <p>
-Los Testigos de Jehová forman una comunidad internacional organizada.
+Los Testigos de Jehová forman una comunidad internacional organizada de manera jerárquica pero con participación local.
 </p>
 
 <p>
-Sus miembros se apoyan entre sí y siguen normas basadas en la Biblia.
+Sus miembros se apoyan entre sí y siguen normas basadas en la Biblia, manteniendo una conducta moral elevada.
 </p>
 
 <p>
-También realizan grandes congresos donde se reúnen miles de creyentes.
+Realizan congresos multitudinarios donde se reúnen miles de creyentes para recibir instrucción espiritual.
 </p>
 
 </div>
 
 <div>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Jehovah%27s_Witnesses_Convention.jpg">
+<img src="https://images.pexels.com/photos/6995226/pexels-photo-6995226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Grupo de personas reunidas - Congreso religioso">
 
 </div>
 
@@ -355,7 +385,7 @@ También realizan grandes congresos donde se reúnen miles de creyentes.
 
 <div class="container">
 
-<h2>Pilar 4: Sentido y Propósito</h2>
+<h2>Pilar 4: Sentido y Propósito de Vida</h2>
 
 <div class="grid">
 
@@ -363,13 +393,15 @@ También realizan grandes congresos donde se reúnen miles de creyentes.
 
 <ul>
 
-<li>Conocer a Dios</li>
+<li>Conocer a Dios personalmente mediante la Biblia</li>
 
-<li>Vivir según la Biblia</li>
+<li>Vivir según los principios bíblicos en todo momento</li>
 
-<li>Predicar su mensaje</li>
+<li>Predicar el mensaje del Reino a todas las personas</li>
 
-<li>Esperar el Reino de Dios</li>
+<li>Mantener una conducta ejemplar como representantes de Dios</li>
+
+<li>Esperar con esperanza el Reino de Dios y la vida eterna</li>
 
 </ul>
 
@@ -377,7 +409,7 @@ También realizan grandes congresos donde se reúnen miles de creyentes.
 
 <div>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Kingdom_Hall_Jehovahs_Witnesses.jpg">
+<img src="https://images.pexels.com/photos/272337/pexels-photo-272337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Paisaje de montañas - Representación del paraíso prometido">
 
 </div>
 
@@ -396,18 +428,22 @@ También realizan grandes congresos donde se reúnen miles de creyentes.
 
 <h2>Conclusión</h2>
 
-<div class="card">
+<div class="card" style="text-align:center;">
 
 <p>
-Analizar a los Testigos de Jehová permite comprender cómo las religiones modernas siguen influyendo en la vida de millones de personas.
+Analizar a los Testigos de Jehová permite comprender cómo las religiones modernas siguen influyendo profundamente en la vida de millones de personas.
 </p>
 
 <p>
-Aunque tienen creencias diferentes a otras religiones, comparten elementos fundamentales como la fe, la comunidad y la búsqueda de sentido.
+Aunque tienen creencias que difieren de otras tradiciones cristianas, comparten elementos fundamentales como la fe, la comunidad organizada y la búsqueda de sentido trascendente.
 </p>
 
 <p>
-Estudiar estas expresiones religiosas ayuda a desarrollar respeto y comprensión hacia la diversidad religiosa.
+Estudiar estas expresiones religiosas ayuda a desarrollar respeto genuino y comprensión hacia la diversidad religiosa en nuestras sociedades plurales.
+</p>
+
+<p style="margin-top:40px; font-style:italic; color:#94a3b8;">
+"Conocer para comprender, comprender para respetar"
 </p>
 
 </div>
@@ -418,7 +454,7 @@ Estudiar estas expresiones religiosas ayuda a desarrollar respeto y comprensión
 
 
 <footer>
-Presentación académica
+Presentación académica | Sociología de la Religión | Imágenes con licencia de uso libre
 </footer>
 
 </body>
